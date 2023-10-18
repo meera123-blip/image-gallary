@@ -11,6 +11,10 @@ const ListOfSearchResult = () => {
   if (!suggestiondata) {
     return <ShimmerUI/>;
   }
+  if(error)
+  {
+    console.log(error);
+  }
 
   if(suggestiondata && suggestiondata.length === 0)
   {

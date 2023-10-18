@@ -32,8 +32,6 @@ const ImageCards = ({ image }) => {
     setShowModal(true);
     fetchIndividualData(id);
   };
-
- 
     const handleDownload = (imageUrl) => {
       saveAs(imageUrl, "image");
     };

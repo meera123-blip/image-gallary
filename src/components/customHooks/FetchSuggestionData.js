@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
-
-
-
 export const useFetchSearchData = (searchQuery) => {
     const [suggestiondata, setSuggestionData] = useState(null);
     const [error, setError] = useState(null);

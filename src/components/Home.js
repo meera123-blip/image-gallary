@@ -5,7 +5,7 @@ import ShimmerUI from './ShimmerUI';
 
 
 const Home = () => {
-  const { result: imageData, error } = useFetchImageData();
+  const {  imageData, error } = useFetchImageData();
 
   if (error) {
     return <div>Error: {error}</div>;
@@ -19,6 +19,10 @@ const Home = () => {
   {
     return <div>No data Found!!!</div>
   }
+if(imageData)
+{
+  console.log("home",imageData);
+}
  
 
   return (

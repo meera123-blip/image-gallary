@@ -26,7 +26,7 @@ const Header = () => {
  
 
   return (
-    <div className={`container mx-auto p-4 ${isDarkMode ? 'dark' : ''}`}>
+    <div className={`container mx-auto p-4 ${isDarkMode ? 'dark' : ''}  border-y-slate-600 w-full`}>
       <div className="flex justify-between items-center">
         <div className="text-3xl lg:text-2xl text-base font-bold mb-4 lg:mb-0 lg:mr-4">
           <h1>ImageGallery</h1>

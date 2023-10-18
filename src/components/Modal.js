@@ -2,8 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart, faCircleDown} from '@fortawesome/free-solid-svg-icons'
 import {saveAs} from "file-saver";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import {useSelector}  from 'react-redux';
 
 
@@ -32,15 +30,9 @@ const Modal = ({open,onClose,data}) => {
   <div className="max-w-lg w-full mx-4 p-4 sm:p-8 rounded-lg relative max-h-screen">
   <img
       src={data?.urls?.small}
-      alt="Modal Image"
+      alt={data?.urls?.description}
       className="w-full h-auto rounded-lg relative max-h-96"
     />
-    {/* <LazyLoadImage
-        effect="blur" 
-        src={data?.urls?.regular}
-        alt="Modal image"
-        className="w-full h-auto rounded-lg relative max-h-96"
-      /> */}
     <button
             className="py-2 px-4 absolute top-14 right-12 z-10"
             onClick={() => handleDownload(data?.links?.download)}
