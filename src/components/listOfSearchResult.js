@@ -22,8 +22,8 @@ const ListOfSearchResult = () => {
   }
 
   return (
-    <div>
-      <div className=' text-2xl font-bold ml-10 pl-14'>
+    <div className='mt-8'>
+      <div className=' text-4xl font-semibold ml-10 pl-14'>
         <h1>{query}</h1>
       </div>
       <div className='w-full p-5 pb-10 mx-auto mb-4 gap-5 columns-1 space-y-3 h-auto, sm:grid-cols-2, md:grid-cols-3 lg:columns-3'>
