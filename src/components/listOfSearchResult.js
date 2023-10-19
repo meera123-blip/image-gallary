@@ -26,7 +26,7 @@ const ListOfSearchResult = () => {
       <div className=' text-4xl font-semibold ml-10 pl-14'>
         <h1>{query}</h1>
       </div>
-      <div className='w-full p-5 pb-10 mx-auto mb-4 gap-5 columns-1 space-y-3 h-auto, sm:grid-cols-2, md:grid-cols-3 lg:columns-3'>
+      <div className='columns-1 gap-5 lg:gap-8 sm:colums-2 lg:colums-3 md:columns-2 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8 space-y-5 '>
         {suggestiondata?.results?.map((image) => (
           <ImageCards key={image.id} image={image} />
         ))}

@@ -39,19 +39,20 @@ const ImageCards = ({ image }) => {
 
 
   return (
-    <div key={image.id} className=" cursor-pointer border border-gray-200 rounded-lg relative">
+    <div key={image.id} className=" cursor-pointer border border-gray-200 rounded-lg relative h-auto">
       <LazyLoadImage
         effect="blur" 
         src={image?.urls?.small}
         alt={image?.alt_description}
-        className="w-full h-full  rounded-lg opacity-75 hover:opacity-100"
+        className="w-full   rounded-lg opacity-75 hover:opacity-100 "
         onClick={() => openModal(image.id)}
       />
       <button
-            className="py-2 px-4 absolute top-10 right-12 z-10"
-            onClick={() => handleDownload(modalData?.links?.download)}
-          ><FontAwesomeIcon icon={faCircleDown} color='white'/>
-          </button>
+  className="py-3 px-5 absolute top-4 right-4 z-10"
+  onClick={() => handleDownload(modalData?.links?.download)}
+>
+  <FontAwesomeIcon icon={faCircleDown} color="white" size="lg" />
+</button>
       <div className="flex justify-between items-center mt-2 pr-2">
         <div className="flex items-center -ms-flexbox p-4">
           <img
